@@ -16,11 +16,11 @@ function renderCartItem(item) {
     // 5 × 500.00 ₽ = 2500 ₽
 
     let itemCountText = "";
-    itemCountText = itemCountText + count;
+    itemCountText = itemCountText + product.count;
     itemCountText = ` x `;
-    itemCountText = itemCountText + price;
+    itemCountText = itemCountText + product.price;
     itemCountText = itemCountText + ` ₽ = `;
-    let sum = count * price;
+    let sum = product.count * product.price;
     itemCountText = itemCountText + sum;
     itemCountText = itemCountText + ` ₽ `;
 
